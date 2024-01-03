@@ -22,10 +22,10 @@ const Home = () => {
   
   return (
     <div className="h-screen w-screen text-white flex flex-col justify-center items-center">
-      <p>Welcome, {user.name}</p>
+      { user && <p>Welcome, {user.name}.</p> }
       <Logout className='my-2'/>
       <Button my={4} colorScheme='teal' onClick={handleAuthorizedData}> Get Authorized Data</Button>
-      {data.length!==0 && <p>{JSON.stringify(data)}</p>}
+      { data.length!==0 && <p>{JSON.stringify(data)}</p> }
     </div>
   )
 }
