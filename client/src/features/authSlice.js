@@ -67,7 +67,7 @@ export const authSlice = createSlice({
       .addCase(registerThunk.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
-        state.message = action.payload.message;
+        state.message = action.payload;
       })
       .addCase(registerThunk.rejected, (state, action) => {
         state.isLoading = false;

@@ -100,7 +100,7 @@ return (
       <FormControl isRequired>
         <FormLabel>Password</FormLabel>
         <Input type='password' value={password} onChange={handlePasswordChange} />
-        <FormHelperText textColor="white">Choose a secure password with special characters and numbers.</FormHelperText>
+        <FormHelperText textColor="white">Choose a secure password with uppercases, lowercases and numbers.</FormHelperText>
       </FormControl>
       <FormControl isRequired>
         <FormLabel>Confirm Password</FormLabel>
